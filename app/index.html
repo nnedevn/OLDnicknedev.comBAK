@@ -1,0 +1,108 @@
+`
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title></title>
+    <script src="//ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+    <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css">
+    <link rel="stylesheet" src="//normalize-css.googlecode.com/svn/trunk/normalize.css" />
+    <script src="//cdnjs.cloudflare.com/ajax/libs/modernizr/2.8.2/modernizr.min.js"></script>
+    <link rel="stylesheet" href="../styles/styles.css" />
+    <link href='https://fonts.googleapis.com/css?family=Source+Code+Pro:400,700' rel='stylesheet' type='text/css'>
+</head>
+
+<body>
+
+    <div class="container">
+        <header class="text-center">
+            <h1 class="">
+                <a href="#">
+                    <img class="logo" src="assets/logo.png" alt="Nick Nedev">
+                    <span>Nick&nbsp;Nedev</span>
+                </a>
+            </h1>
+
+        </header>
+
+
+        <div class="clearfix"></div>
+
+
+
+        </nav>
+
+        <nav class="navbar navbar-default">
+            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="myNavbar">
+                <ul class="nav nav-pills nav-justified">
+
+                    <li id="nav-about"><a href="#">about</a></li>
+                    <li id="nav-code-samples"><a href="#">code samples</a></li>
+                    <li id="nav-projects"><a href="#">projects</a></li>
+                    <li><a href="assets/resume.pdf">resume</a></li>
+                </ul>
+
+            </div>
+
+
+        </nav>
+
+    </div>
+
+
+
+    <div class="container content">
+        <div id="about">
+          <h2>About me</h2>
+            <p>French fries keuka gold spunta irish cobbler carola bildtstar. Kestrel nicola norgold russet blue congo red lasoda vivaldi, tater amandine keuka gold sirco alturas cara. Spunta bildtstar russet norkotah apline goldrush. Jersey royal russet
+                norkotah carola stobrawa marfona. Adirondack red adirondack blue norgold russet monalisa primura, cabritas red lasoda superior alturas amandine pink fir apple pike. Marfona fingerling red pontiac red lasoda shepody.
+
+            </p>
+        </div>
+
+        <div id="code-samples" class="content" style="display: none;">
+            <h2>Code Samples</h2>
+            <article>
+                <h4>Code Sample #1</h4>
+                <p> A snippet of a function which retrieves JSON data from a google spreadsheet, parses it and sends the usable object to a callback function.</p>
+                <code>
+                    <pre>load : function(callback) { var apiKey = 'the_api_key_goes_here'; var googleUrl = 'https://spreadsheets.google.com/feeds/list/@apiKey/od6/public/values?alt=json-in-script'; $.ajax({ url : googleUrl.replace('@apiKey', apiKey), dataType
+                        : 'jsonp', success : function(data) { ToolBelt.data = ToolBelt.parseGoogleData(data); if(callback) callback(data); } }); },
+                    </pre>
+                </code>
+                <p>This is the parser function which strips a part of the properties' names to make it more human usable.</p>
+                <code>
+                    <pre>parseGoogleData: function(data) { var tempArr = []; $.each(data.feed.entry, function(ix, val) { var obj = {}; for(var key in val) { var matched = key.match(/gsx\$/); if(matched) { obj[key.slice(4)] = val[key].$t; } } tempArr.push(new
+                        Item(obj)); }); return tempArr; },
+                    </pre>
+                </code>
+                <h4>Code Sample #2</h4>
+                <p>An Example of work in progress in CodeIgniter. This snipet is a part of a model designed to upload an image to be used in a profile page.</p>
+                <code>
+                    <pre>$this-&gt;load-&gt;library('upload', $config); if ( ! $this-&gt;upload-&gt;do_upload()) //upload is unsucessfull { $error = array('error' =&gt; $this-&gt;upload-&gt;display_errors()); $this-&gt;load-&gt;view('upload_view', $error);
+                        } else { /*Uploads the image renames the file ToDo: * get the student id from the database * generate a random number * append both to the file name and enter the filename in the database. .*/ $this-&gt;load-&gt;library('image_lib');
+                        $upload_data = $this-&gt;upload-&gt;data(); $file_name = $upload_data['file_name']; $path_parts = pathinfo($config['upload_path'] . $file_name); $extention = $path_parts['extension']; rename($config['upload_path'] . '/' . $file_name,
+                        $config['upload_path'] . '/' . "dbEntryId_TimeStamp" . '.' . $extention); $data = array('upload_data' =&gt; $upload_data); }
+                    </pre>
+                </code>
+            </article>
+        </div>
+        <div id="projects">
+            <h2>Content coming soonish.</h2>
+        </div>
+    </div>
+    <!-- content -->
+
+    <script src="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
+    <script src="../scripts/main.js"></script>
+</body>
+
+</html>
