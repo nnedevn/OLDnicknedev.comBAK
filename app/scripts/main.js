@@ -5,7 +5,7 @@ window.onload = function(){
 
 console.log ('app.js');
 
-// this code is bullshit
+// this code is must be revised
 
     var $windows = $('#about,#code-samples,#projects');
     var $buttons = $('#nav-about,#nav-code-samples,#nav-projects');
