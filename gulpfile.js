@@ -32,4 +32,3 @@ gulp.task('watch', ['connect', 'serve'], function () {
         server.changed(file.path);
     });
 });
-

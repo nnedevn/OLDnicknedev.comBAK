@@ -1,6 +1,5 @@
 console.log('Hello gulp-livereload!');
 
-
 window.onload = function(){
 
 console.log ('app.js');
