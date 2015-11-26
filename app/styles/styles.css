@@ -1,25 +1,76 @@
-* {font-family: 'Source Code Pro', Courier, monospace;}
+* {
+  font-family: 'Source Code Pro', Courier, monospace;
+}
 
+header {
+  margin: 2em 0;
 }
-.navbar-default{
-  color:white;
-}
+
 .logo {
-  max-height: 65px;
+  max-height: 60px;
+  float: right;
 }
+
+.test {
+  background-color: #FF0;
+}
+
 .content {
   display: block;
 }
-h1 a {font-size: .625em;
-  font-weight: 700;
+
+a h1 {
+  font-size: 1.3em;
+  font-weight: 600;
   color:#00000F;
-}adsd
-h1 a:hover{
+  margin: 0;
+  padding: .75em 0 .1em;
+}
+
+h1 a:hover {
   text-decoration: none;
   color:#00000F;
 }
+h3 {
+  color: #789;
+  font-weight: 400;
+  font-size: 1em;
+  margin: 0;
+  padding: 0 0 .75em;
+}
+
 #about, #code-samples, #projects {
   display: none;
+}
+
+.navbar-toggle {
+  position: absolute;
+}
+.navbar-toggle .icon-bar {
+  background-color: #00000F !important; 
+}
+
+nav a, footer a {
+  color: #00000F;
+}
+
+.nav {
+  border-top: 1px dashed #00000F;
+  border-bottom: 1px dashed #00000F;
+  border-left: none;
+  border-right: none;
+}
+
+.nav-pills a:hover,
+.nav-pills a:active,
+.nav-pills a:focus, 
+footer a:hover {
+  color: #660099;
+  background-color: #FFF !important;
+}
+
+.navbar-default {
+  background-color:white;
 }
 
 #footer {
