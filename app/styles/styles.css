@@ -39,7 +39,7 @@ h3 {
   padding: 0 0 .75em;
 }
 
-#about, #code-samples, #projects {
+#about, #code-samples, #projects, #contact{
   display: none;
 }
 
@@ -47,7 +47,7 @@ h3 {
   position: absolute;
 }
 .navbar-toggle .icon-bar {
-  background-color: #00000F !important; 
+  background-color: #00000F !important;
 }
 
 nav a, footer a {
@@ -63,7 +63,7 @@ nav a, footer a {
 
 .nav-pills a:hover,
 .nav-pills a:active,
-.nav-pills a:focus, 
+.nav-pills a:focus,
 footer a:hover {
   color: #660099;
   background-color: #FFF !important;
