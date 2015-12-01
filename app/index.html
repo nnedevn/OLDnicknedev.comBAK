@@ -20,7 +20,7 @@
     <div class="container">
         <header class="row">
                 <a href="#">
-                    <span class="col-lg-2 col-lg-offset-4 
+                    <span class="col-lg-2 col-lg-offset-4
                                  col-md-2 col-md-offset-4
                                  col-sm-3 col-sm-offset-2
                                  col-xs-12">
@@ -130,6 +130,63 @@ if (!$this->upload->do_upload()) //upload is unsucessfull { $error = array('erro
         </div>
         <div id="projects">
             <h2>Content coming soonish.</h2>
+        </div>
+
+        <div id="contact">
+          <div class="row">
+    <div class="col-md-12">
+      <div class="well well-sm">
+
+        <div id="form-messages" class="after-submit"></div>
+
+        <form id="ajax-contact" class="form-horizontal" action="scripts/mailer.php" method="post" enctype="multipart/form-data">
+
+          <fieldset>
+            <legend class="text-center header">Drop me a line</legend>
+
+            <div class="form-group">
+              <span class="col-md-1 col-md-offset-2 text-center"><i class="ion-person"></i></span>
+              <div class="col-md-8">
+                <input id="name" name="name" type="text" placeholder="Name" class="form-control input required input">
+
+              </div>
+            </div>
+
+            <div class="form-group">
+              <span class="col-md-1 col-md-offset-2 text-center"><i class="ion ion-email  "></i></span>
+              <div class="col-md-8">
+                <input id="email" name="email" type="text" placeholder="Email Address" class="form-control required input">
+
+              </div>
+            </div>
+
+            <div class="form-group">
+              <span class="col-md-1 col-md-offset-2 text-center"><i class="ion-iphone"></i></span>
+              <div class="col-md-8">
+                <input id="phone" name="phone" type="text" placeholder="Phone (optional)" class="form-control input">
+              </div>
+
+            </div>
+
+            <div class="form-group">
+              <span class="col-md-1 col-md-offset-2 text-center"><i class="ion-document-text"></i></span>
+              <div class="col-md-8">
+                <textarea class="form-control input" id="message" name="message" placeholder="Enter your massage here. I will get back to you as soon as possible." rows="7"></textarea>
+
+              </div>
+            </div>
+
+            <div class="form-group">
+              <div class="col-md-12 text-center">
+                <button type="submit" class="btn btn-primary btn-lg">Submit</button>
+              </div>
+            </div>
+          </fieldset>
+        </form>
+      </div>
+    </div>
+  </div>
+
         </div>
             <footer>
         <ul>
