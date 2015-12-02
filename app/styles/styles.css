@@ -39,7 +39,7 @@ h3 {
   padding: 0 0 .75em;
 }
 
-#about, #code-samples, #projects, #contactt{
+#about, #code-samples, #projects, #contact{
   display: none;
 }
 
@@ -87,13 +87,14 @@ footer a:hover {
 
 }
 
-#contact {
-    border-top: none;
-    /*background-color: red;*/
+.well {
+    border: none;
 }
 .header {
 
     border-bottom: 1px dashed #00000F;
+    border-top: 1px dashed #00000F;
+    padding: 10px;
 }
 
 .form-control{

@@ -7,7 +7,7 @@ console.log ('app.js');
 // this code is must be revised
 
     var $windows = $('#about,#code-samples,#projects,#contact');
-    var $buttons = $('#nav-about,#nav-code-samples,#nav-projects, #fot-contact');
+    var $buttons = $('#nav-about,#nav-code-samples,#nav-projects, #nav-contact');
 
     $('#about').show();
 
