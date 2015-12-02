@@ -1,4 +1,4 @@
-console.log('Hello gulp-livereload!');
+'use strict'
 
 window.onload = function(){
 
@@ -6,15 +6,15 @@ console.log ('app.js');
 
 // this code is must be revised
 
-    var $windows = $('#about,#code-samples,#projects,#contact');
-    var $buttons = $('#nav-about,#nav-code-samples,#nav-projects, #nav-contact');
+    let $windows = $('#about,#code-samples,#projects,#contact');
+    let $buttons = $('#nav-about,#nav-code-samples,#nav-projects, #nav-contact');
 
     $('#about').show();
 
     $buttons.on('click', function(e){
         var $id;
 
-        $divid = $('#' + this.id.substring(4));
+        let $divid = $('#' + this.id.substring(4));
 
     if(!$divid.is(':visible') ) {
         $windows.slideUp();
