@@ -1,4 +1,5 @@
 'use strict'
+
 $(function(){
   //Get the form
   let form = ('#ajax-contact');

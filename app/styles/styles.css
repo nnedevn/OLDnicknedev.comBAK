@@ -22,15 +22,16 @@ header {
 a h1 {
   font-size: 1.3em;
   font-weight: 600;
-  color:#00000F;
+  color: #00000F;
   margin: 0;
   padding: .75em 0 .1em;
 }
 
 h1 a:hover {
   text-decoration: none;
-  color:#00000F;
+  color: #00000F;
 }
+
 h3 {
   color: #789;
   font-weight: 400;
@@ -39,13 +40,18 @@ h3 {
   padding: 0 0 .75em;
 }
 
-#about, #code-samples, #projects, #contact{
+#about, #code-samples, #projects, #contact {
   display: none;
+}
+
+.navbar-default {
+  background-color: white;
 }
 
 .navbar-toggle {
   position: absolute;
 }
+
 .navbar-toggle .icon-bar {
   background-color: #00000F !important;
 }
@@ -61,42 +67,41 @@ nav a, footer a {
   border-right: none;
 }
 
-.nav-pills a:hover,
-.nav-pills a:active,
-.nav-pills a:focus,
-footer a:hover {
+.nav-pills a:hover, .nav-pills a:active, .nav-pills a:focus, footer a:hover {
   color: #660099;
   background-color: #FFF !important;
 }
 
-.navbar-default {
-  background-color:white;
-}
-
-#footer {
-  background: #ffab62;
-  width: 100%;
-  height: 100px;
-  position: absolute;
-  bottom: 0;
-  left: 0;
-}
-
 .well {
   background-color: #FFF;
-
 }
 
 .well {
-    border: none;
-}
-.header {
-
-    border-bottom: 1px dashed #00000F;
-    border-top: 1px dashed #00000F;
-    padding: 10px;
-}
-
-.form-control{
   border: none;
+}
+
+.header {
+  border-bottom: 1px dashed #00000F;
+  border-top: 1px dashed #00000F;
+  padding: 10px;
+}
+
+.form-control {
+  border: none;
+}
+
+footer {
+  border-top: 1px dashed #d3d3d3;
+  margin-top: 3em;
+}
+
+footer>ul {
+  list-style: none;
+  display: flex;
+  justify-content: center;
+}
+
+footer>ul>li {
+  padding: 1em 0.325em;
+  font-size: 1.5em;
 }
