@@ -128,7 +128,7 @@ if (!$this->upload->do_upload()) //upload is unsucessfull { $error = array('erro
             <div class="form-group">
               <span class="col-md-1 col-md-offset-2 text-center"><i class="ion-person"></i></span>
               <div class="col-md-8">
-                <input id="name" name="name" type="text" placeholder="Name" class="form-control input required input">
+                <input id="name" name="name" type="text" placeholder="Name" required class="form-control input required input">
 
               </div>
             </div>
@@ -136,7 +136,7 @@ if (!$this->upload->do_upload()) //upload is unsucessfull { $error = array('erro
             <div class="form-group">
               <span class="col-md-1 col-md-offset-2 text-center"><i class="ion ion-email  "></i></span>
               <div class="col-md-8">
-                <input id="email" name="email" type="text" placeholder="Email Address" class="form-control required input">
+                <input id="email" name="email" type="email" required placeholder="Email Address" class="form-control required input">
 
               </div>
             </div>
@@ -144,7 +144,7 @@ if (!$this->upload->do_upload()) //upload is unsucessfull { $error = array('erro
             <div class="form-group">
               <span class="col-md-1 col-md-offset-2 text-center"><i class="ion-iphone"></i></span>
               <div class="col-md-8">
-                <input id="phone" name="phone" type="text" placeholder="Phone (optional)" class="form-control input">
+                <input id="phone" name="phone" type="tel" placeholder="Phone (optional)" class="form-control input">
               </div>
 
             </div>
