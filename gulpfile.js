@@ -32,3 +32,13 @@ gulp.task('watch', ['connect', 'serve'], function () {
         server.changed(file.path);
     });
 });
+
+gulp.task('css', function () {
+    return gulp.src('app/styles/styles.css')
+        .pipe($.uncss({
+            html: ['app/index.html','http://nicknedev.com']
+        }))
+
+        .pipe($.rename('style.min.css'))
+        .pipe(gulp.dest('app/styles/'));
+});

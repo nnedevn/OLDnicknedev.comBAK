@@ -2,10 +2,10 @@
 
 $(function(){
   //Get the form
-  let form = ('#ajax-contact');
+  var form = ('#ajax-contact');
 
   //Get the message div
-  let formMessages = $('#form-messages');
+  var formMessages = $('#form-messages');
 
   // Set up an event listener for the contact form
   $(form).submit(function(event) {
@@ -15,7 +15,7 @@ $(function(){
     console.log('Default prevented.');
 
     //Serialize the form date
-    let formData = $(form).serialize();
+    var formData = $(form).serialize();
 
     //Submit the form via ajax
     $.ajax({
