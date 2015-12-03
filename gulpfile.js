@@ -33,7 +33,7 @@ gulp.task('watch', ['connect', 'serve'], function () {
     });
 });
 
-gulp.task('css', function () {
+gulp.task('uncss', function () {
     return gulp.src('app/styles/styles.css')
         .pipe($.uncss({
             html: ['app/index.html','http://nicknedev.com']
