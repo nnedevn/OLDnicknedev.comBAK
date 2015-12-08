@@ -20,10 +20,10 @@
   <div class="container">
     <header class="row">
       <a href="#">
-        <span class="col-lg-2 col-lg-offset-4
-                                 col-md-2 col-md-offset-4
-                                 col-sm-3 col-sm-offset-2
-                                 col-xs-12">
+        <span class="col-lg-2 col-lg-offset-1
+                     col-md-2
+                     col-sm-3
+                     col-xs-12">
           <img class="logo" src="assets/logo.svg" alt="Nick Nedev">
         </span>
         <span class="col-lg-2 col-md-2 col-sm-3 col-xs-12">
@@ -35,7 +35,8 @@
 
   </div>
   <div class="container">
-    <nav class="navbar">
+    <nav class="navbar row">
+        <span class="col-lg-8 col-lg-offset-2">
       <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
         <span class="icon-bar"></span>
         <span class="icon-bar"></span>
@@ -49,12 +50,13 @@
           <li id="nav-contact"><a href="#">contact</a></li>
         </ul>
       </div>
+      </span>
     </nav>
 
   </div>
 
   <div class="container content">
-    <div class="col-lg-10 col-lg-offset-2" id="about">
+    <div class="col-lg-8 col-lg-offset-2" id="about">
       <h2>About me</h2>
       <p>Hello, I’m Nick. This is my little piece of the Internet. I’m a web developer who moved (from Bulgaria) to Seattle in 2003. I like to write code. I also like to play with hardware, linux, automation and other tech-related stuff.
       </p>
@@ -64,7 +66,7 @@
       <p>Here's my <a href="assets/resume_NedevNick.pdf">résumé</a>.</p>
     </div>
 
-    <div id="code-samples" class="content col-lg-10 col-lg-offset-2" style="display: none;">
+    <div id="code-samples" class="content col-lg-8 col-lg-offset-2" style="display: none;">
       <h2>Code Samples</h2>
       <article>
         <h4>Code Sample #1</h4>
@@ -83,37 +85,19 @@
         <h4>Code Sample #2</h4>
         <p>An Example of work in progress in CodeIgniter. This snipet is a part of a model designed to upload an image to be used in a profile page.</p>
         <code>
-          <pre>
-            <?php
-$this->load->library('upload', $config);
-
-if (!$this->upload->do_upload()) //upload is unsucessfull { $error = array('error' => $this->upload->display_errors()); $this->load->view('upload_view', $error);
-
-}
-  else
-	{ /* Uploads the image renames the file
-          ToDo: * get the student id from the database
-                * generate a random number
-                * append both to the file name and enter the filename in the database. */
-	$this->load->library('image_lib');
-	$upload_data = $this->upload->data();
-	$file_name = $upload_data['file_name'];
-	$path_parts = pathinfo($config['upload_path'] . $file_name);
-	$extention = $path_parts['extension'];
-	rename($config['upload_path'] . '/' . $file_name, $config['upload_path'] . '/' . "dbEntryId_TimeStamp" . '.' . $extention);
-	$data = array(
-		'upload_data' => $upload_data
-	);
-	}
-                    </pre>
-                </code>
-            </article>
+        </code>
+        </article>
         </div>
-        <div id="projects">
-            <h2>Content coming soonish.</h2>
+        
+        <div id="projects" class="container">
+            <div class="row">
+                <div class="col-lg-10 col-lg-offset-2">
+                    <h2>Content coming soonish.</h2>
+                </div>
+            </div>
         </div>
 
-        <div id="contact">
+        <div id="contact" class="container">
           <div class="row">
     <div class="col-md-12">
       <div class="well well-sm">

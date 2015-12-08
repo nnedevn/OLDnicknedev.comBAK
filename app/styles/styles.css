@@ -52,6 +52,10 @@ h3 {
   position: absolute;
 }
 
+.navbar-collapse {
+  padding: 0;
+}
+
 .navbar-toggle .icon-bar {
   background-color: #00000F !important;
 }
