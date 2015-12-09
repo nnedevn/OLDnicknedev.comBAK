@@ -5,20 +5,15 @@
 header {
   margin: 2em 0;
 }
-
+.header {
+  border-bottom: 1px dashed #00000F;
+  border-top: 1px dashed #00000F;
+  padding: 10px;
+}
 .logo {
   max-height: 60px;
   float: right;
 }
-
-.test {
-  background-color: #FF0;
-}
-
-.content {
-  display: block;
-}
-
 a h1 {
   font-size: 1.3em;
   font-weight: 600;
@@ -26,12 +21,10 @@ a h1 {
   margin: 0;
   padding: .75em 0 .1em;
 }
-
 h1 a:hover {
   text-decoration: none;
   color: #00000F;
 }
-
 h3 {
   color: #789;
   font-weight: 400;
@@ -40,72 +33,89 @@ h3 {
   padding: 0 0 .75em;
 }
 
-#about, #code-samples, #projects, #contact {
-  display: none;
-}
-
-.navbar-default {
-  background-color: white;
-}
-
-.navbar-toggle {
-  position: absolute;
-}
-
-.navbar-collapse {
-  padding: 0;
-}
-
-.navbar-toggle .icon-bar {
-  background-color: #00000F !important;
-}
-
 nav a, footer a {
   color: #00000F;
 }
-
 .nav {
   border-top: 1px dashed #00000F;
   border-bottom: 1px dashed #00000F;
   border-left: none;
   border-right: none;
 }
-
 .nav-pills a:hover, .nav-pills a:active, .nav-pills a:focus, footer a:hover {
   color: #660099;
   background-color: #FFF !important;
 }
-
-.well {
-  background-color: #FFF;
+.navbar-default {
+  background-color: white;
+}
+.navbar-toggle {
+  position: absolute;
+}
+.navbar-toggle .icon-bar {
+  background-color: #00000F !important;
+}
+.navbar-collapse {
+  padding: 0;
 }
 
-.well {
-  border: none;
+#about, #code-samples, #projects, #contact, #form-messages{
+  display: none;
 }
 
-.header {
+a#resume {
+  color: #00000F;
   border-bottom: 1px dashed #00000F;
-  border-top: 1px dashed #00000F;
-  padding: 10px;
 }
+
+a#resume:hover {
+  color: #660099;
+  text-decoration: none;
+  border-bottom: 1px dashed #660099;
+}
+
+/*form mess*/
+/*.form-group {
+  margin-left: 0 !important;
+  margin-right: 0 !important;
+}*/
 
 .form-control {
+  height: auto;
+  border-top: none;
+  border-left: none;
+  border-right: none;
+  border-bottom: 1px dashed #00000F;
+  border-radius: 0;
+  box-shadow: none;
+  margin: .5em 0;
+  padding: .75em 1em;
+  background-color: #f7f8f9;
+}
+.btn,
+.btn:focus,
+.btn-lg,
+.btn-group-lg>.btn {
+  background-color: #00000F;
+  border-radius: none;
   border: none;
+
 }
 
-footer {
-  border-top: 1px dashed #d3d3d3;
+.btn:hover,
+.btn-active {
+  background-color: #660099;
+}
+/*end form mess*/
+
+footer ul {
+  border-top: 1px dashed #00000F;
   margin-top: 3em;
-}
-
-footer>ul {
   list-style: none;
   display: flex;
   justify-content: center;
 }
-
-footer>ul>li {
+footer ul li {
   padding: 1em 0.325em;
   font-size: 1.5em;
 }
