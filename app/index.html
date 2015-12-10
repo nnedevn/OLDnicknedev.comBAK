@@ -19,15 +19,15 @@
   <header class="container">
     <div class="row">
       <a href="#">
-        <span class="col-lg-2 col-lg-offset-1
-                     col-md-2
-                     col-sm-3
+        <span class="col-lg-8 col-lg-offset-2
+                     col-md-10 col-md-offset-1
+                     col-sm-12
                      col-xs-12">
-        <img class="logo" src="assets/logo.svg" alt="Nick Nedev">
-        </span>
-        <span class="col-lg-2 col-md-2 col-sm-3 col-xs-12">
-          <h1>Nick&nbsp;Nedev</h1>
+        <img class="logo pull-left" src="assets/logo.svg" alt="Nick Nedev">
+        <div class="pull-left">
+          <h1>Nick Nedev</h1>
           <h3 class="title">web developer</h3>
+        </div>
         </span>
       </a>
     </div>
@@ -35,8 +35,8 @@
 
   <nav class="container">
     <div class="navbar row">
-        <span class="col-lg-8 col-lg-offset-2">
-          <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+        <span class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1 col-sm-12">
+          <button type="button" class="navbar-toggle pull-right" data-toggle="collapse" data-target="#myNavbar">
             <span class="icon-bar"></span>
             <span class="icon-bar"></span>
             <span class="icon-bar"></span>
@@ -44,7 +44,7 @@
           <div class="collapse navbar-collapse" id="myNavbar">
             <ul class="nav nav-pills nav-justified">
               <li id="nav-about"><a href="#">about</a></li>
-              <li id="nav-code-samples"><a href="#">code samples</a></li>
+              <li id="nav-code-samples"><a href="#">code snippets</a></li>
               <li id="nav-projects"><a href="#">projects</a></li>
               <li id="nav-contact"><a href="#">contact</a></li>
             </ul>
@@ -55,7 +55,7 @@
 
   <div id="about" class="container">
     <div class="row">
-      <div class="col-lg-8 col-lg-offset-2">
+      <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
         <h2>About me</h2>
         <p>Hello, I’m Nick. This is my little piece of the Internet. I’m a web developer who moved (from Bulgaria) to Seattle in 2003. I like to write code. I also like to play with hardware, linux, automation and other tech-related stuff.</p>
         <p>When not in front of a computer I can be found eating ramen, watching anime or out hiking around Seattle.</p>
@@ -66,10 +66,10 @@
 
   <div id="code-samples" class="container" style="display: none;">
     <div class="row">
-      <div class="col-lg-8 col-lg-offset-2">
-        <h2>Code Samples</h2>
+      <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
+        <h2>Code Snippets</h2>
         <article>
-          <h4>Code Sample #1</h4>
+          <h4>JSON parser from Google Spreadsheets</h4>
           <p> A snippet of a function which retrieves JSON data from a google spreadsheet, parses it and sends the usable object to a callback function.</p>
             <pre>load: function (callback) { var apiKey = 'THE-API-KEY-GOES-HERE'; var googleUrl = 'https://spreadsheets.google.com/feeds/list/@apiKey/od6/public/values?alt=json-in-script'; $.ajax({ url: googleUrl.replace('@apiKey', apiKey), dataType: 'jsonp',
               success: function (data) { ToolBelt.data = ToolBelt.parseGoogleData(data); if (callback) callback(data); } }); },
@@ -91,7 +91,7 @@
         
   <div id="projects" class="container">
     <div class="row">
-      <div class="col-lg-8 col-lg-offset-2">
+      <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
         <h2>Projects</h2>
         <p>Content coming soon.</p>
       </div>
@@ -100,7 +100,7 @@
 
   <div id="contact" class="container">
     <div class="row">
-      <div class="col-lg-8 col-lg-offset-2">
+      <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
         <div id="form-messages" class="alert alert-dismissible" role="alert">
           <button type="button" class="close" data-dismiss="alert" aria-label="Close">
             <span aria-hidden="true">&times;</span>
@@ -114,32 +114,32 @@
             <p>Drop me a line and I will get back to you as soon as possible.</p>
             
             <div class="form-group">
-              <div class="col-lg-9">
+              <div class="col-lg-10 col-md-11">
                 <input id="name" name="name" type="text" placeholder="Name"  class="form-control input required input">
               </div>
             </div>
 
             <div class="form-group">
-              <div class="col-lg-9">
+              <div class="col-lg-10 col-md-11">
                 <input id="email" name="email" type="email"  placeholder="Email Address" class="form-control required input">
               </div>
             </div>
 
             <div class="form-group">
-              <div class="col-lg-9">
+              <div class="col-lg-10 col-md-11">
                 <input id="phone" name="phone" type="tel" placeholder="Phone (optional)" class="form-control input">
               </div>
             </div>
 
             <div class="form-group">
-              <div class="col-lg-9">
+              <div class="col-lg-10 col-md-11">
                 <textarea class="form-control input" id="message" name="message" placeholder="Enter your massage here." rows="7"></textarea>
 
               </div>
             </div>
 
             <div class="form-group">
-              <div class="col-lg-9">
+              <div class="col-lg-10 col-md-11">
                 <button type="submit" class="btn btn-primary btn-lg">Submit</button>
               </div>
             </div>
@@ -154,7 +154,7 @@
     
   <footer class="container">
     <div class="row">
-      <div class="col-lg-8 col-lg-offset-2">
+      <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
         <ul>
           <li><a href="https://github.com/nnedevn" target="_blank" class="ion-social-github"></a></li>
           <li><a href="https://www.linkedin.com/in/nedevn" target="_blank" class="ion-social-linkedin"></a></li>

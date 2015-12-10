@@ -12,7 +12,7 @@ header {
 }
 .logo {
   max-height: 60px;
-  float: right;
+  padding-right: 15px;
 }
 a h1 {
   font-size: 1.3em;
@@ -33,6 +33,12 @@ h3 {
   padding: 0 0 .75em;
 }
 
+h4 {
+  padding: 1em 0 0;
+  font-weight: 600;
+  font-size: 1.2em;
+}
+
 nav a, footer a {
   color: #00000F;
 }
@@ -42,16 +48,22 @@ nav a, footer a {
   border-left: none;
   border-right: none;
 }
-.nav-pills a:hover, .nav-pills a:active, .nav-pills a:focus, footer a:hover {
+.nav-pills a:hover, .nav-pills a:active, footer a:hover {
   color: #660099;
   background-color: #FFF !important;
 }
+
+.nav-pills a:focus {
+  color: #00000F;
+  background-color: #FFF !important;
+}
+
 .navbar-default {
   background-color: white;
 }
-.navbar-toggle {
+/*.navbar-toggle {
   position: absolute;
-}
+}*/
 .navbar-toggle .icon-bar {
   background-color: #00000F !important;
 }
