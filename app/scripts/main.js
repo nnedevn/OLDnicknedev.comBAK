@@ -4,6 +4,7 @@ window.onload = function(){
 
 console.log ('app.js');
 
+
 // this code is must be revised
 
     var $windows = $('#about,#code-samples,#projects,#contact');
