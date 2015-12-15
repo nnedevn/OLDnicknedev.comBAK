@@ -48,6 +48,15 @@ nav a, footer a {
   border-left: none;
   border-right: none;
 }
+
+.nav.navbar-nav {
+  border: none;
+  margin-top, margin-bottom: 0;
+}
+.navbar-default .navbar-collapse {
+  border-top: 1px dashed #00000F;
+}
+
 .nav-pills a:hover, .nav-pills a:active, footer a:hover {
   color: #660099;
   background-color: #FFF !important;
