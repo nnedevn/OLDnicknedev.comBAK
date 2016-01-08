@@ -1,27 +1,28 @@
 'use strict'
 
-window.onload = function(){
+$(document).ready(function () {
 
-console.log ('app.js');
+  $('#about').show();
 
+  var buttons = $('.button');
+  var contentDivs = $('.site-content');
 
-// this code is must be revised
+  if (buttons !== null) {
 
-    var $windows = $('#about,#code-samples,#projects,#contact');
-    var $buttons = $('#nav-about,#nav-code-samples,#nav-projects, #nav-contact');
+    buttons.each(
+        function (iCopy) {
 
-    $('#about').show();
+          buttons[iCopy].addEventListener('click', function () {
+            'use strict'
 
-    $buttons.on('click', function(e){
-        var $id;
+            var divId = $('#' + this.id.substr(4));
 
-        var $divid = $('#' + this.id.substring(4));
-
-    if(!$divid.is(':visible') ) {
-        $windows.slideUp();
-        $divid.slideDown();
-
-    }
-        });
-
-}
+            if (!divId.is(':visible')) {
+              contentDivs.slideUp();
+              divId.slideDown();
+            }
+          });
+        }
+    );
+  }
+});

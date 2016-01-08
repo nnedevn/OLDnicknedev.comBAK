@@ -37,11 +37,11 @@
       <div class="navbar row">
           <span class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1 col-sm-12">
             <ul class="nav nav-pills nav-justified">
-              <li id="nav-about"><a href="#">about</a></li>
-              <li id="nav-code-samples"><a href="#">code snippets</a></li>
-              <li id="nav-projects"><a href="#">projects</a></li>
-              <li id="nav-contact"><a href="#">contact</a></li>
-              </ul>
+              <li id="nav-about" class="button"><a href="#">about</a></li>
+              <li id="nav-code-samples" class="button"><a href="#">code snippets</a></li>
+              <li id="nav-projects" class="button"><a href="#">projects</a></li>
+              <li id="nav-contact" class="button"><a href="#">contact</a></li>
+            </ul>
         </span>
       </div>
     </nav>
@@ -71,17 +71,16 @@
       <div class="container">
       <div class="collapse navbar-collapse row" id="mobile-navbar">
         <ul class="nav navbar-nav col-xs-12">
-          <li id="nav-about"><a href="#">about</a></li>
-          <li id="nav-code-samples"><a href="#">code snippets</a></li>
-          <li id="nav-projects"><a href="#">projects</a></li>
-          <li id="nav-contact"><a href="#">contact</a></li>
+          <li id="nav-about" class="button"><a href="#">about</a></li>
+          <li id="nav-code-samples" class="button"><a href="#">code snippets</a></li>
+          <li id="nav-projects" class="button"><a href="#">projects</a></li>
+          <li id="nav-contact" class="button"><a href="#">contact</a></li>
         </ul>
       </div>
     </div>
     </div>
   </nav>
-
-  <div id="about" class="container">
+  <div id="about" class="container site-content">
     <div class="row">
       <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
         <h2>About me</h2>
@@ -92,7 +91,7 @@
     </div>
   </div>
 
-  <div id="code-samples" class="container" style="display: none;">
+  <div id="code-samples" class="container site-content" style="display: none;">
     <div class="row">
       <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
         <h2>Code Snippets</h2>
@@ -172,7 +171,7 @@ getData: function () {
     </div>
   </div>
 
-  <div id="projects" class="container">
+  <div id="projects" class="container site-content">
     <div class="row">
       <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
         <h2>Projects</h2>
@@ -181,7 +180,7 @@ getData: function () {
     </div>
   </div>
 
-  <div id="contact" class="container">
+  <div id="contact" class="container site-content">
     <div class="row">
       <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
         <div id="form-messages" class="alert alert-dismissible" role="alert">
@@ -246,7 +245,7 @@ getData: function () {
     </div>
   </footer>
 
-    <!-- content -->
+    <!-- /content -->
 
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
     <script src="scripts/main.js"></script>
