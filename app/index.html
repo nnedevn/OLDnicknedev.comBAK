@@ -8,21 +8,21 @@
   <title></title>
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css">
-  <link rel="stylesheet" src="https://normalize-css.googlecode.com/svn/trunk/normalize.css" />
+  <link rel="stylesheet" src="https://normalize-css.googlecode.com/svn/trunk/normalize.css"/>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/modernizr/2.8.2/modernizr.min.js"></script>
   <link rel="stylesheet" href="http://code.ionicframework.com/ionicons/2.0.0/css/ionicons.min.css">
   <link href='https://fonts.googleapis.com/css?family=Source+Code+Pro:400,600' rel='stylesheet' type='text/css'>
   <link rel="stylesheet" href="http://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.0.0/styles/default.min.css">
   <script src="http://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.0.0/highlight.min.js"></script>
 
-  <link rel="stylesheet" href="styles/styles.css" />
+  <link rel="stylesheet" href="styles/styles.css"/>
 </head>
 
 <body>
-  <div class="visible-lg visible-md visible-sm hidden-xs">
-    <header class="container">
-      <div class="row">
-        <a href="#">
+<div class="visible-lg visible-md visible-sm hidden-xs">
+  <header class="container">
+    <div class="row">
+      <a href="#">
           <span class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1 col-sm-12">
           <img class="logo pull-left" src="assets/logo.svg" alt="Nick Nedev">
           <div class="pull-left">
@@ -30,11 +30,11 @@
             <h3 class="title">web developer</h3>
           </div>
           </span>
-        </a>
-      </div>
-    </header>
-    <nav class="container">
-      <div class="navbar row">
+      </a>
+    </div>
+  </header>
+  <nav class="container">
+    <div class="navbar row">
           <span class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1 col-sm-12">
             <ul class="nav nav-pills nav-justified">
               <li id="nav-about" class="button"><a href="#">about</a></li>
@@ -43,32 +43,33 @@
               <li id="nav-contact" class="button"><a href="#">contact</a></li>
             </ul>
         </span>
-      </div>
-    </nav>
-  </div>
+    </div>
+  </nav>
+</div>
 
 <!--mobile header-->
 
-  <nav class="navbar navbar-default hidden-lg hidden-md hidden-sm visible-xs">
-    <div class="container">
-      <div class="navbar-header">
-        <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#mobile-navbar" aria-expanded="false">
-          <span class="sr-only">Toggle navigation</span>
-          <span class="icon-bar"></span>
-          <span class="icon-bar"></span>
-          <span class="icon-bar"></span>
-        </button>
-        <div class="navbar-brand">
-          <a href="#">
-            <img class="logo pull-left" src="assets/logo.svg" alt="Nick Nedev">
-            <div class="pull-left">
-              <h1>Nick Nedev</h1>
-              <h3 class="title">web developer</h3>
-            </div>
-          </a>
-        </div>
+<nav class="navbar navbar-default hidden-lg hidden-md hidden-sm visible-xs">
+  <div class="container">
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#mobile-navbar"
+              aria-expanded="false">
+        <span class="sr-only">Toggle navigation</span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+      <div class="navbar-brand">
+        <a href="#">
+          <img class="logo pull-left" src="assets/logo.svg" alt="Nick Nedev">
+          <div class="pull-left">
+            <h1>Nick Nedev</h1>
+            <h3 class="title">web developer</h3>
+          </div>
+        </a>
       </div>
-      <div class="container">
+    </div>
+    <div class="container">
       <div class="collapse navbar-collapse row" id="mobile-navbar">
         <ul class="nav navbar-nav col-xs-12">
           <li id="nav-about" class="button"><a href="#">about</a></li>
@@ -78,178 +79,261 @@
         </ul>
       </div>
     </div>
-    </div>
-  </nav>
-  <div id="about" class="container site-content">
-    <div class="row">
-      <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
-        <h2>About me</h2>
-        <p>Hello, I’m Nick. This is my little piece of the Internet. I’m a web developer who moved (from Bulgaria) to Seattle in 2003. I like to write code. I also like to play with hardware, linux, automation and other tech-related stuff.</p>
-        <p>When not in front of a computer I can be found eating ramen, watching anime or out hiking around Seattle.</p>
-        <p>Here's my <a id="resume" href="assets/resume_NedevNick.pdf" target="_blank">résumé</a>.</p>
-      </div>
+  </div>
+</nav>
+<div id="about" class="container site-content">
+  <div class="row">
+    <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
+      <h2>About me</h2>
+      <p>Hello, I’m Nick. This is my little piece of the Internet. I’m a web developer who lives Seattle. I like to write code. I have  a passion for automation and optimization. I use a Kanban board for my everyday activities, personal and professional. </p>
+      <p>When not in front of a computer I can be found eating ramen, watching anime or out hiking around Seattle.</p>
+      <p>Here's my <a id="resume" href="assets/resume_NedevNick.pdf" target="_blank">résumé</a>.</p>
     </div>
   </div>
+</div>
 
-  <div id="code-samples" class="container site-content" style="display: none;">
-    <div class="row">
-      <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
-        <h2>Code Snippets</h2>
-        <article>
-          <h4>JSON parser from Google Spreadsheets</h4>
-          <p> A snippet of a function which retrieves JSON data from a google spreadsheet, parses it and sends the usable object to a callback function.</p>
+<div id="code-samples" class="container site-content" style="display: none;">
+  <div class="row">
+    <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
+      <h2>Code Snippets</h2>
+      <article>
+        <h4>JSON parser from Google Spreadsheets</h4>
+        <p> A snippet of a function which retrieves JSON data from a google spreadsheet, parses it and sends the usable
+          object to a callback function.</p>
             <pre>
               <code class="javascript">
-getData: function () {
-		var apiKey = '1tZReioR8zOYVKq4FlIbEfWrVdZjFOykIJa9osxyZ79I';
-		var googleUrl = 'https://spreadsheets.google.com/feeds/list/@apiKey/od6/public/values?alt=json';
+                getData: function () {
+                var apiKey = '1tZReioR8zOYVKq4FlIbEfWrVdZjFOykIJa9osxyZ79I';
+                var googleUrl = 'https://spreadsheets.google.com/feeds/list/@apiKey/od6/public/values?alt=json';
 
-		return $.ajax({
-				url: googleUrl.replace('@apiKey', apiKey),
-				dataType: 'jsonp',
+                return $.ajax({
+                url: googleUrl.replace('@apiKey', apiKey),
+                dataType: 'jsonp',
 
-			})
-			.done(function (data) {
-				ToolBelt.parseData(data);
-			})
-			.fail(function () {
-				console.log('Failed to retrieve data.');
-			})
-			.complete(function () {
+                })
+                .done(function (data) {
+                ToolBelt.parseData(data);
+                })
+                .fail(function () {
+                console.log('Failed to retrieve data.');
+                })
+                .complete(function () {
 
-				console.log('complete');
-			});
-	},
-</code>
-            </pre>
-            <p>This is the parser function which strips a part of the properties' names to make it more human usable.</p>
-            <pre>
-              <code class="javascript"> parseData: function(rawData) {
-    var tempArr = [];
-		$.each(rawData.feed.entry, function (ix, val) {
-			var obj = {};
-			for (var key in val) {
-				var matched = key.match(/gsx\$/);
-				if (matched) {
-					obj[key.slice(4)] = val[key].$t;
-				}
-			}
-			tempArr.push(new Item(obj));
-		});
-
-		ToolBelt.renderData(tempArr);
-	},
+                console.log('complete');
+                });
+                },
               </code>
             </pre>
-        </article>
-        <article>
-          <h4>Code Sample #2</h4>
-          <p>An Example of work in progress in CodeIgniter. This snippet is a part of a model designed to upload an image to be used in a profile page.</p>
+        <p>This is the parser function which strips a part of the properties' names to make it more human usable.</p>
+            <pre>
+              <code class="javascript"> parseData: function(rawData) {
+                var tempArr = [];
+                $.each(rawData.feed.entry, function (ix, val) {
+                var obj = {};
+                for (var key in val) {
+                var matched = key.match(/gsx\$/);
+                if (matched) {
+                obj[key.slice(4)] = val[key].$t;
+                }
+                }
+                tempArr.push(new Item(obj));
+                });
+
+                ToolBelt.renderData(tempArr);
+                },
+              </code>
+            </pre>
+      </article>
+      <article>
+        <h4>Code Sample #2</h4>
+        <p>An Example of work in progress in CodeIgniter. This snippet is a part of a model designed to upload an image
+          to be used in a profile page.</p>
             <pre>
               <code class="php">
-                if (!$this->upload->do_upload()) //upload is unsucessfull { $error = array('error' => $this->upload->display_errors()); $this->load->view('upload_view', $error);
+                if (!$this->upload->do_upload()) //upload is unsucessfull { $error = array('error' =>
+                $this->upload->display_errors()); $this->load->view('upload_view', $error);
                 }
                 else
                 { /* Uploads the image renames the file
-                  ToDo: * get the student id from the database
-                        * generate a random number
-                        * append both to the file name and enter the filename in the database. */
+                ToDo: * get the student id from the database
+                * generate a random number
+                * append both to the file name and enter the filename in the database. */
                 $this->load->library('image_lib');
                 $upload_data = $this->upload->data();
                 $file_name = $upload_data['file_name'];
                 $path_parts = pathinfo($config['upload_path'] . $file_name);
                 $extention = $path_parts['extension'];
-                rename($config['upload_path'] . '/' . $file_name, $config['upload_path'] . '/' . "dbEntryId_TimeStamp" . '.' . $extention);
+                rename($config['upload_path'] . '/' . $file_name, $config['upload_path'] . '/' . "dbEntryId_TimeStamp" .
+                '.' . $extention);
                 $data = array(
                 'upload_data' => $upload_data
                 );
                 }
               </code>
             </pre>
-        </article>
-      </div>
+      </article>
     </div>
   </div>
+</div>
 
-  <div id="projects" class="container site-content">
-    <div class="row">
-      <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
-        <h2>Projects</h2>
-        <p>Content coming soon.</p>
-      </div>
-    </div>
-  </div>
+<div id="projects" class="container site-content">
+  <div class="row">
+    <div class="col-sm-8 col-sm-offset-2">
+      <h2>Projects</h2>
+      <h5>In no particular order:</h5>
+      <p class="padded"></p>
 
-  <div id="contact" class="container site-content">
-    <div class="row">
-      <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
-        <div id="form-messages" class="alert alert-dismissible" role="alert">
-          <button type="button" class="close" data-dismiss="alert" aria-label="Close">
-            <span aria-hidden="true">&times;</span>
-          </button>
+      <article class="row">
+        <div class="col-sm-2">
+          <h4></h4>
+          <a class="red" href="http://nicknedev.com/sandbox/fireBaseChat/"><img src="assets/firebase-client-small.png" alt=""></a>
         </div>
+        <div class="col-sm-7 col-sm-offset-3 col-md-offset-2 red">
+          <h4>Simple FireBase Chat App</h4>
+          <p>Utilizes Firebase as a backend.
+          </p>
+          <a href="https://github.com/nnedevn/fireBaseChat" target="_blank" class="btn btn-primary btn-sm">View on
+            GitHub</a>
+          <a href="http://www.nicknedev.com/sandbox/fireBaseChat/" target="_blank" class="btn btn-primary btn-sm">View
+            Site</a>
+        </div>
+      </article>
 
-          <form id="ajax-contact" class="form-horizontal" action="scripts/mailer.php" method="post" enctype="multipart/form-data">
-          <fieldset>
+      <p class="padded"></p>
 
-            <h2>Contact me</h2>
-            <p>Drop me a line and I will get back to you as soon as possible.</p>
-
-            <div class="form-group">
-              <div class="col-lg-10 col-md-11">
-                <input id="name" name="name" type="text" placeholder="Name"  class="form-control input required input">
-              </div>
-            </div>
-
-            <div class="form-group">
-              <div class="col-lg-10 col-md-11">
-                <input id="email" name="email" type="email"  placeholder="Email Address" class="form-control required input">
-              </div>
-            </div>
-
-            <div class="form-group">
-              <div class="col-lg-10 col-md-11">
-                <input id="phone" name="phone" type="tel" placeholder="Phone (optional)" class="form-control input">
-              </div>
-            </div>
-
-            <div class="form-group">
-              <div class="col-lg-10 col-md-11">
-                <textarea class="form-control input" id="message" name="message" placeholder="Enter your massage here." rows="7"></textarea>
-
-              </div>
-            </div>
-
-            <div class="form-group">
-              <div class="col-lg-10 col-md-11">
-                <button type="submit" class="btn btn-primary btn-lg">Submit</button>
-              </div>
-            </div>
-
-          </fieldset>
-          </form>
+      <article class="row">
+      <div class="col-sm-2">
+        <h4></h4>
+        <a class="red" href="http://www.nicknedev.com/sandbox/elevatorSimulator/"><img src="assets/elevator-small.png" alt=""></a>
       </div>
+      <div class="col-sm-7 col-sm-offset-3 col-md-offset-2 red">
+        <h4>Gdocs JSON Handlebars</h4>
+        <p>Some description
+
+         </p>
+        <a href="https://github.com/nnedevn/elevator" target="_blank" class="btn btn-primary btn-sm">View on
+          GitHub</a>
+        <a href="http://www.nicknedev.com/sandbox/elevatorSimulator/" target="_blank" class="btn btn-primary btn-sm">View
+          Site</a>
+      </div>
+      </article>
+
+      <p class="padded"></p>
+
+      <article class="row">
+        <div class="col-sm-2">
+          <h4></h4>
+          <a class="red" href="http://nicknedev.com/sandbox/gDocsSite/"><img src="assets/gDocsSite.png" alt=""></a>
+        </div>
+        <div class="col-sm-7 col-sm-offset-3 col-md-offset-2 red">
+          <h4>Gdocs JSON Handlebars</h4>
+          <p>Some description
+            <a class="" target="_blank"
+               href="https://docs.google.com/spreadsheets/d/1B3FjBgeqYpcObgL9MxEcwUyVfBkNMAWaQkbbrPorJCs/edit#gid=0">here</a>.
+            This is a proof of concept exercise. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Autem consectetur culpa dicta ea earum explicabo, fuga illum magnam maxime nesciunt omnis quae quas repellat repellendus sapiente sint ullam, velit veritatis.</p>
+          <a href="https://github.com/nnedevn/gDocsExperiment" target="_blank" class="btn btn-primary btn-sm">View on
+            GitHub</a>
+          <a href="http://www.nicknedev.com/sandbox/gDocsSite/" target="_blank" class="btn btn-primary btn-sm">View
+            Site</a>
+        </div>
+      </article>
+
+      <p class="padded"></p>
+
+      <article class="row">
+        <div class="col-sm-2">
+          <h4></h4>
+          <a class="red" href="http://www.nicknedev.com/sandbox/Responsive-HTML-Email-Template/"><img src="assets/HTMLEmail.png" alt=""></a>
+        </div>
+        <div class="col-sm-7 col-sm-offset-3 col-md-offset-2 red">
+          <h4>Responsive HTML Email Template</h4>
+          <p>A responsive email template geared towards mobile email clients.
+
+          </p>
+          <a href="https://github.com/nnedevn/Responsive-HTML-Email-Template" target="_blank" class="btn btn-primary btn-sm">View on
+            GitHub</a>
+          <a href="http://www.nicknedev.com/sandbox/Responsive-HTML-Email-Template/" target="_blank" class="btn btn-primary btn-sm">View
+            Site</a>
+        </div>
+      </article>
+
     </div>
   </div>
+</div>
 
-  <div class="clearfix"></div>
-
-  <footer class="container">
-    <div class="row">
-      <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1 col-sm-12 col-xs-12">
-        <ul>
-          <li><a href="https://github.com/nnedevn" target="_blank" class="ion-social-github"></a></li>
-          <li><a href="https://www.linkedin.com/in/nedevn" target="_blank" class="ion-social-linkedin"></a></li>
-        </ul>
+<div id="contact" class="container site-content">
+  <div class="row">
+    <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
+      <div id="form-messages" class="alert alert-dismissible" role="alert">
+        <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
       </div>
+
+      <form id="ajax-contact" class="form-horizontal" action="scripts/mailer.php" method="post"
+            enctype="multipart/form-data">
+        <fieldset>
+
+          <h2>Contact me</h2>
+          <p>Drop me a line and I will get back to you as soon as possible.</p>
+
+          <div class="form-group">
+            <div class="col-lg-10 col-md-11">
+              <input id="name" name="name" type="text" placeholder="Name" class="form-control input required input">
+            </div>
+          </div>
+
+          <div class="form-group">
+            <div class="col-lg-10 col-md-11">
+              <input id="email" name="email" type="email" placeholder="Email Address"
+                     class="form-control required input">
+            </div>
+          </div>
+
+          <div class="form-group">
+            <div class="col-lg-10 col-md-11">
+              <input id="phone" name="phone" type="tel" placeholder="Phone (optional)" class="form-control input">
+            </div>
+          </div>
+
+          <div class="form-group">
+            <div class="col-lg-10 col-md-11">
+              <textarea class="form-control input" id="message" name="message" placeholder="Enter your massage here."
+                        rows="7"></textarea>
+
+            </div>
+          </div>
+
+          <div class="form-group">
+            <div class="col-lg-10 col-md-11">
+              <button type="submit" class="btn btn-primary btn-lg">Submit</button>
+            </div>
+          </div>
+
+        </fieldset>
+      </form>
     </div>
-  </footer>
+  </div>
+</div>
 
-    <!-- /content -->
+<div class="clearfix"></div>
 
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
-    <script src="scripts/main.js"></script>
-    <script src="scripts/form.js"></script>
-    <script>hljs.initHighlightingOnLoad();</script>
+<footer class="container">
+  <div class="row">
+    <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1 col-sm-12 col-xs-12">
+      <ul>
+        <li><a href="https://github.com/nnedevn" target="_blank" class="ion-social-github"></a></li>
+        <li><a href="https://www.linkedin.com/in/nedevn" target="_blank" class="ion-social-linkedin"></a></li>
+      </ul>
+    </div>
+  </div>
+</footer>
+
+<!-- /content -->
+
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
+<script src="scripts/main.js"></script>
+<script src="scripts/form.js"></script>
+<script>hljs.initHighlightingOnLoad();</script>
 </body>
 </html>
