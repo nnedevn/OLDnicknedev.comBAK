@@ -38,7 +38,7 @@ $(function(){
     }).fail(function(data){
       //Make sure the form Messages div has the 'error' class.
       $(formMessages).removeClass('alert-success').show();
-      $(formMessages).addClass('alert-danger').show(); 
+      $(formMessages).addClass('alert-danger').show();
 
       //Set the message text
       if (data.responseText !==('')) {
